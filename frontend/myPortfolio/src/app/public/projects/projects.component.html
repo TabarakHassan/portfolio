@@ -1,0 +1,23 @@
+<section class="projects-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">My Projects</h2>
+  
+      <div class="row">
+        <!-- Project Card -->
+        <div class="col-md-4 mb-4" *ngFor="let project of projects">
+          <div class="card h-100 project-card">
+            <img src="porto2.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a [href]="project.liveLink" target="_blank" class="btn btn-sm btn-primary">Live</a>
+              <a [href]="project.githubLink" target="_blank" class="btn btn-sm btn-outline-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
